@@ -1,5 +1,5 @@
-FROM node:12-alpine
+FROM nginx:alpine
 WORKDIR
 COPY . .
-CMD ["node", "test.html"]
-EXPOSE 3000
+CMD ["nginx", "test.html"]
+EXPOSE 8080
